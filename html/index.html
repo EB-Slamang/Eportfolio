@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ebrahiem Slamang — Electrical &amp; Computer Engineer</title>
+<meta name="description" content="Eportfolio of Ebrahiem Slamang, final-year Electrical & Computer Engineering student at the University of Cape Town — control systems, RF/electromagnetics and machine learning for medical imaging.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230A0E1A%22/><path d=%22M10 55 L30 55 L38 30 L50 75 L60 45 L68 55 L90 55%22 stroke=%22%234FD8C4%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+</head>
+<body>
+
+<!-- progress bar : live signal readout of scroll position -->
+<div class="scan-progress" id="scanProgress" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand" aria-label="Back to top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 24" width="34" height="20"><polyline points="0,12 8,12 12,4 18,20 24,7 28,12 40,12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="brand-text">E.SLAMANG</span>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Primary">
+      <ol>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#journey" class="nav-link">Journey</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#artefacts" class="nav-link">Artefacts</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#involvement" class="nav-link">Involvement</a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+      </ol>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="section-inner hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>// SIGNAL ACQUIRED — EBRAHIEM SLAMANG</p>
+        <h1 class="hero-title">I turn signals into systems that sense, decide, and respond.</h1>
+        <p class="hero-sub">Final-year Electrical &amp; Computer Engineering student at the University of Cape Town, working across <strong>control systems</strong>, <strong>RF &amp; electromagnetics</strong>, and <strong>machine learning for medical imaging</strong>.</p>
+
+        <div class="hero-actions">
+          <a href="#journey" class="btn btn-primary">See my journey<span aria-hidden="true"> →</span></a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+
+        <div class="hero-stats" role="list">
+          <div class="hero-stat" role="listitem"><span class="hero-stat-num">86.1%</span><span class="hero-stat-label">Matric aggregate</span></div>
+          <div class="hero-stat" role="listitem"><span class="hero-stat-num">’24–’25</span><span class="hero-stat-label">Dean's Merit List</span></div>
+          <div class="hero-stat" role="listitem"><span class="hero-stat-num">4th yr</span><span class="hero-stat-label">BScEng @ UCT</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="scope-panel">
+          <div class="scope-head">
+            <span class="scope-title">CH.1 — LIVE TRACE</span>
+            <span class="scope-rec"><span class="rec-dot" aria-hidden="true"></span>REC</span>
+          </div>
+          <div class="scope-screen">
+            <svg class="waveform-svg" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+              <g class="waveform-track">
+                <polyline class="wf-line" points="0,60 20,60 34,20 48,100 62,15 76,95 90,60 110,60 130,60 144,25 158,95 172,20 186,100 200,60 220,60 240,60 254,20 268,100 282,15 296,95 310,60 330,60 350,60 364,25 378,95 392,20 400,60" />
+                <polyline class="wf-line wf-line--copy" points="400,60 420,60 434,20 448,100 462,15 476,95 490,60 510,60 530,60 544,25 558,95 572,20 586,100 600,60 620,60 640,60 654,20 668,100 682,15 696,95 710,60 730,60 750,60 764,25 778,95 792,20 800,60" />
+              </g>
+            </svg>
+          </div>
+          <div class="scope-foot">
+            <span>CONTROL SYS</span><span>RF / EM</span><span>ML · IMAGING</span>
+          </div>
+        </div>
+
+        <div class="headshot-panel">
+          <img src="images/headshot.jpg" alt="Portrait of Ebrahiem Slamang" width="342" height="373" loading="eager">
+          <span class="headshot-tag">UCT · ECE</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section-inner section-with-rail">
+      <div class="rail" aria-hidden="true">
+        <span class="rail-node"></span>
+        <span class="rail-line"></span>
+      </div>
+      <div class="section-body">
+        <p class="section-eyebrow">01 · About</p>
+        <h2 class="section-title">Systems thinking, matric to megahertz.</h2>
+
+        <div class="about-grid">
+          <figure class="about-photo">
+            <img src="https://picsum.photos/seed/uct-campus/700/560" alt="Placeholder image — University of Cape Town campus" loading="lazy">
+            <figcaption>University of Cape Town — where the signal chain starts.</figcaption>
+          </figure>
+
+          <div class="about-text">
+            <p>I'm a final-year Electrical and Computer Engineering student at the University of Cape Town, currently focused on <strong>control systems</strong>, <strong>RF and electromagnetics</strong>, and applying <strong>machine learning to medical imaging</strong>. I matriculated second in my class with seven distinctions and an 86.1% aggregate, and I've carried that same discipline through into university — landing on the Dean's Merit List in both 2024 and 2025.</p>
+            <p>Outside the lab, I tutor first-year Computer Science students, tee off with the UCT Golf Club, and get outdoors with the Mountain &amp; Ski Club. What draws me to engineering is the quiet usefulness of a well-built system: a controller that keeps a process stable, a signal that carries more information than noise, a model that helps a clinician see something they might otherwise miss.</p>
+
+            <div class="quickstats">
+              <div class="qstat"><span class="qstat-num">7</span><span class="qstat-label">Matric distinctions</span></div>
+              <div class="qstat"><span class="qstat-num">2nd</span><span class="qstat-label">In matric class</span></div>
+              <div class="qstat"><span class="qstat-num">1 yr+</span><span class="qstat-label">CS tutoring @ UCT</span></div>
+              <div class="qstat"><span class="qstat-num">3</span><span class="qstat-label">Focus areas</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section class="section section--alt" id="journey">
+    <div class="section-inner section-with-rail">
+      <div class="rail" aria-hidden="true">
+        <span class="rail-node"></span>
+        <span class="rail-line"></span>
+      </div>
+      <div class="section-body">
+        <p class="section-eyebrow">02 · Journey</p>
+        <h2 class="section-title">Education &amp; experience, traced end to end.</h2>
+        <p class="section-lead">The path from matric science labs to university tutorials — every node a step in the same circuit.</p>
+
+        <ol class="timeline">
+          <li class="tl-item">
+            <div class="tl-node" aria-hidden="true"></div>
+            <div class="tl-content">
+              <p class="tl-date">2023 — Present</p>
+              <h3 class="tl-title">BScEng, Electrical &amp; Computer Engineering</h3>
+              <p class="tl-org">University of Cape Town</p>
+              <p class="tl-desc">Fourth year of a four-year degree, specialising in control systems, RF &amp; electromagnetics, and machine learning applications in medical imaging.</p>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-node" aria-hidden="true"></div>
+            <div class="tl-content">
+              <p class="tl-date">2024</p>
+              <h3 class="tl-title">Computer Science Tutor</h3>
+              <p class="tl-org">University of Cape Town</p>
+              <p class="tl-desc">Ran weekly practical sessions advising students on assignments and practicals, invigilated and marked tests, and answered student queries on the course discussion forum.</p>
+            </div>
+          </li>
+
+          <li class="tl-item">
+            <div class="tl-node" aria-hidden="true"></div>
+            <div class="tl-content">
+              <p class="tl-date">2018 — 2022</p>
+              <h3 class="tl-title">National Senior Certificate</h3>
+              <p class="tl-org">Cannons Creek Independent School</p>
+              <p class="tl-desc">Mathematics, English HL, Afrikaans FAL, Physical Sciences, Geography, CAT and IT. Matriculated second in class with 7 distinctions and an 86.1% aggregate.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner section-with-rail">
+      <div class="rail" aria-hidden="true">
+        <span class="rail-node"></span>
+        <span class="rail-line"></span>
+      </div>
+      <div class="section-body">
+        <p class="section-eyebrow">03 · Skills</p>
+        <h2 class="section-title">Control panel.</h2>
+        <p class="section-lead">The tools, focus areas and working habits I bring to a project — switched on.</p>
+
+        <div class="panel-group">
+          <h3 class="panel-group-title">Engineering focus</h3>
+          <div class="module-grid">
+            <div class="module"><span class="module-led"></span><span class="module-label">Control Systems</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">RF &amp; Electromagnetics</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">ML for Medical Imaging</span></div>
+          </div>
+        </div>
+
+        <div class="panel-group">
+          <h3 class="panel-group-title">Languages &amp; tools</h3>
+          <div class="module-grid">
+            <div class="module"><span class="module-led"></span><span class="module-label">Python</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">Java</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">SQL</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">Delphi</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">MS Office &amp; GSuite</span></div>
+          </div>
+        </div>
+
+        <div class="panel-group">
+          <h3 class="panel-group-title">Ways of working</h3>
+          <div class="module-grid">
+            <div class="module"><span class="module-led"></span><span class="module-label">Fast learner</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">Detail-oriented</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">Analytical</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">Determined &amp; persistent</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">Time management</span></div>
+            <div class="module"><span class="module-led"></span><span class="module-label">Communication</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARTEFACTS ============ -->
+  <section class="section section--alt" id="artefacts">
+    <div class="section-inner section-with-rail">
+      <div class="rail" aria-hidden="true">
+        <span class="rail-node"></span>
+        <span class="rail-line"></span>
+      </div>
+      <div class="section-body">
+        <p class="section-eyebrow">04 · Artefacts</p>
+        <h2 class="section-title">Evidence, not just claims.</h2>
+        <p class="section-lead">A few artefacts that back up the skills above. (Placeholder images below — swap in your own scans/photos.)</p>
+
+        <div class="artefact-grid">
+          <article class="artefact-card">
+            <div class="artefact-media">
+              <img src="https://picsum.photos/seed/tutoring-uct/640/440" alt="Placeholder image — computer science tutoring session" loading="lazy">
+              <span class="artefact-tag">2024</span>
+            </div>
+            <div class="artefact-body">
+              <h3>Computer Science Tutor</h3>
+              <p>University of Cape Town — evidence of applied communication and mentoring, running weekly practicals and marking assessments.</p>
+            </div>
+          </article>
+
+          <article class="artefact-card">
+            <div class="artefact-media">
+              <img src="https://picsum.photos/seed/programming-olympiad/640/440" alt="Placeholder image — programming olympiad certificate" loading="lazy">
+              <span class="artefact-tag">2022</span>
+            </div>
+            <div class="artefact-body">
+              <h3>Bronze — Programming Olympiad</h3>
+              <p>Institute of IT Professionals. Certified for algorithmic problem solving under competition conditions.</p>
+            </div>
+          </article>
+
+          <article class="artefact-card">
+            <div class="artefact-media">
+              <img src="https://picsum.photos/seed/computer-olympiad/640/440" alt="Placeholder image — computer olympiad certificate" loading="lazy">
+              <span class="artefact-tag">2021 – 2022</span>
+            </div>
+            <div class="artefact-body">
+              <h3>Computer Olympiad — Silver &amp; Bronze</h3>
+              <p>Institute of IT Professionals. Silver (2021), Bronze (2022) — consistent placement across two consecutive years.</p>
+            </div>
+          </article>
+
+          <article class="artefact-card">
+            <div class="artefact-media">
+              <img src="https://picsum.photos/seed/leadership-camp/640/440" alt="Placeholder image — school leadership camp" loading="lazy">
+              <span class="artefact-tag">2020</span>
+            </div>
+            <div class="artefact-body">
+              <h3>Leadership Camp</h3>
+              <p>Cannons Creek Independent School. Early groundwork for the Student Representative, Student Leader and Prefect roles that followed.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section" id="achievements">
+    <div class="section-inner section-with-rail">
+      <div class="rail" aria-hidden="true">
+        <span class="rail-node"></span>
+        <span class="rail-line"></span>
+      </div>
+      <div class="section-body">
+        <p class="section-eyebrow">05 · Achievements</p>
+        <h2 class="section-title">Readout.</h2>
+
+        <div class="readout-grid">
+          <div class="readout"><span class="readout-num">2025</span><span class="readout-label">Dean's Merit List</span></div>
+          <div class="readout"><span class="readout-num">2024</span><span class="readout-label">Dean's Merit List</span></div>
+          <div class="readout"><span class="readout-num">86.1%</span><span class="readout-label">Matric aggregate, 7 distinctions</span></div>
+          <div class="readout"><span class="readout-num">2nd</span><span class="readout-label">Place in matric class</span></div>
+          <div class="readout"><span class="readout-num">Dux</span><span class="readout-label">School Dux Science Award</span></div>
+          <div class="readout"><span class="readout-num">’21 · ’22</span><span class="readout-label">Academic Honours</span></div>
+          <div class="readout"><span class="readout-num">2020</span><span class="readout-label">Academic Colours</span></div>
+          <div class="readout"><span class="readout-num">1st</span><span class="readout-label">CAT &amp; Physical Sciences, 2021</span></div>
+          <div class="readout"><span class="readout-num">1st</span><span class="readout-label">CAT, 2020</span></div>
+          <div class="readout"><span class="readout-num">1st</span><span class="readout-label">L.O., Geography &amp; IT, 2022</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INVOLVEMENT ============ -->
+  <section class="section section--alt" id="involvement">
+    <div class="section-inner section-with-rail">
+      <div class="rail" aria-hidden="true">
+        <span class="rail-node"></span>
+        <span class="rail-line"></span>
+      </div>
+      <div class="section-body">
+        <p class="section-eyebrow">06 · Involvement</p>
+        <h2 class="section-title">Leadership &amp; service.</h2>
+
+        <div class="involve-grid">
+          <div class="involve-col">
+            <h3 class="involve-heading">Leadership</h3>
+            <ul class="involve-list">
+              <li><span class="involve-role">Prefect</span><span class="involve-meta">2022 · Cannons Creek Independent School</span></li>
+              <li><span class="involve-role">Student Leader</span><span class="involve-meta">2021 · Cannons Creek Independent School</span></li>
+              <li><span class="involve-role">Student Representative</span><span class="involve-meta">2020 · Cannons Creek Independent School</span></li>
+            </ul>
+          </div>
+
+          <div class="involve-col">
+            <h3 class="involve-heading">Service &amp; culture</h3>
+            <ul class="involve-list">
+              <li><span class="involve-role">UCT Golf Club</span><span class="involve-meta">2024 – Present · University of Cape Town</span></li>
+              <li><span class="involve-role">Mountain &amp; Ski Club</span><span class="involve-meta">2024 – Present · University of Cape Town</span></li>
+              <li><span class="involve-role">Matric Dance Executive Committee</span><span class="involve-meta">2020 · Cannons Creek Independent School</span></li>
+              <li><span class="involve-role">Senior Marimba Band</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
+              <li><span class="involve-role">Canoeing Club</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
+              <li><span class="involve-role">Photographic Society — Exec Committee (2020)</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
+              <li><span class="involve-role">Interact Club</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
+              <li><span class="involve-role">Junior PR Committee</span><span class="involve-meta">2018 – 2019 · Cannons Creek Independent School</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="gallery-strip">
+          <img src="https://picsum.photos/seed/golf-club/400/300" alt="Placeholder image — golf club" loading="lazy">
+          <img src="https://picsum.photos/seed/mountain-ski/400/300" alt="Placeholder image — mountain and ski club" loading="lazy">
+          <img src="https://picsum.photos/seed/marimba-band/400/300" alt="Placeholder image — marimba band" loading="lazy">
+          <img src="https://picsum.photos/seed/canoeing/400/300" alt="Placeholder image — canoeing club" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <p class="section-eyebrow section-eyebrow--light">07 · Connect</p>
+      <h2 class="contact-title">Let's put a signal on the line.</h2>
+      <p class="contact-sub">Open to internships, collaboration, and conversations about control systems, RF/EM or ML in medical imaging.</p>
+
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:ebrahiem.2004@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="tel:+27765043040">076 504 3040</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ebrahiem-slamang-a6b352260/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn-ghost" href="Ebrahiem_Slamang_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer-inner">
+    <p>&copy; <span id="year"></span> Ebrahiem Slamang. Built for an engineering eportfolio assignment.</p>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
