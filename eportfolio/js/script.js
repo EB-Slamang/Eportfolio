@@ -16,11 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const siteNav = document.getElementById('siteNav');
 
   if (navToggle && siteNav) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = siteNav.classList.toggle('is-open');
-      navToggle.setAttribute('aria-expanded', String(isOpen));
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
+  navToggle.addEventListener('click', () => {
+    // Only toggle if the mobile nav layout is actually active — prevents
+    // the button locking scroll with no visible menu on wider screens.
+    if (getComputedStyle(siteNav).position !== 'fixed') return;
+
+    const isOpen = siteNav.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
 
     siteNav.querySelectorAll('.nav-link').forEach((link) => {
       link.addEventListener('click', () => {
