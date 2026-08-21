@@ -410,7 +410,7 @@ strong{ color: var(--text-hi); font-weight: 600; }
 
 /* ---------- generic section ---------- */
 .section{ padding: 100px 0; position: relative; }
-.section--alt{ background: linear-gradient(180deg, transparent, rgba(19,27,46,0.4), transparent); }
+.section--alt{ background: linear-gradient(180deg, transparent, rgba(224, 214, 190, 0.5), transparent); }
 
 .section-with-rail{
   display: grid;
