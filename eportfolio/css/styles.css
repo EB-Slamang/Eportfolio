@@ -815,3 +815,94 @@ strong{ color: var(--text-hi); font-weight: 600; }
   .quickstats{ grid-template-columns: 1fr 1fr; }
   .contact-actions{ flex-direction: column; align-items: stretch; }
 }
+
+/* ---------- golf swing easter egg ---------- */
+.golf-trigger{
+  cursor: pointer;
+  border-bottom: 1px dashed var(--trace-cyan);
+  transition: color 180ms ease, border-color 180ms ease;
+}
+.golf-trigger:hover,
+.golf-trigger:focus-visible{
+  color: var(--trace-cyan);
+  border-color: var(--trace-amber);
+}
+
+.golf-overlay{
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.golf-overlay.is-playing{ opacity: 1; visibility: visible; }
+
+.golf-club-wrap{
+  position: absolute;
+  left: 4%;
+  bottom: 12%;
+  transform-origin: 50% 6%;
+  transform: rotate(70deg);
+}
+.golf-overlay.is-playing .golf-club-wrap{
+  animation: golf-swing 0.5s ease-in forwards;
+}
+
+.golf-impact{
+  position: absolute;
+  left: 9%;
+  bottom: 17.5%;
+  width: 26px;
+  height: 26px;
+  margin-left: -13px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,138,99,0.9), transparent 70%);
+  opacity: 0;
+  transform: scale(0.3);
+}
+.golf-overlay.is-playing .golf-impact{
+  animation: golf-impact-pop 0.4s ease-out 0.32s forwards;
+}
+
+.golf-ball-wrap{
+  position: absolute;
+  left: 9%;
+  bottom: 18.5%;
+  opacity: 0;
+}
+.golf-overlay.is-playing .golf-ball-wrap{
+  animation: golf-ball-flight 1.15s cubic-bezier(.25,.7,.4,1) 0.35s forwards;
+}
+
+@keyframes golf-swing{
+  0%   { transform: rotate(70deg); }
+  55%  { transform: rotate(70deg); }
+  75%  { transform: rotate(-18deg); }
+  100% { transform: rotate(-38deg); }
+}
+
+@keyframes golf-impact-pop{
+  0%   { opacity: 0; transform: scale(0.3); }
+  40%  { opacity: 1; transform: scale(1.15); }
+  100% { opacity: 0; transform: scale(1.6); }
+}
+
+@keyframes golf-ball-flight{
+  0%   { opacity: 0; transform: translate(0, 0) rotate(0deg); }
+  4%   { opacity: 1; }
+  22%  { transform: translate(28vw, -20vh) rotate(200deg); }
+  48%  { transform: translate(54vw, -32vh) rotate(400deg); }
+  74%  { transform: translate(78vw, -14vh) rotate(600deg); }
+  96%  { opacity: 1; transform: translate(96vw, 8vh) rotate(760deg); }
+  100% { opacity: 0; transform: translate(101vw, 10vh) rotate(770deg); }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .golf-overlay.is-playing .golf-club-wrap,
+  .golf-overlay.is-playing .golf-ball-wrap,
+  .golf-overlay.is-playing .golf-impact{
+    animation: none;
+  }
+}

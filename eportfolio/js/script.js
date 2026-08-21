@@ -158,4 +158,33 @@ document.addEventListener('DOMContentLoaded', () => {
       mod.classList.add('is-pulsed');
     });
   });
+
+  /* ---------------- golf swing easter egg ---------------- */
+  const golfTrigger = document.getElementById('golfTrigger');
+  const golfOverlay = document.getElementById('golfOverlay');
+  let golfTimeout = null;
+
+  function playGolfAnimation() {
+    if (!golfOverlay) return;
+
+    // restart cleanly even if clicked again mid-animation
+    clearTimeout(golfTimeout);
+    golfOverlay.classList.remove('is-playing');
+    void golfOverlay.offsetWidth; // force reflow so the animation can replay
+    golfOverlay.classList.add('is-playing');
+
+    golfTimeout = setTimeout(() => {
+      golfOverlay.classList.remove('is-playing');
+    }, 1600);
+  }
+
+  if (golfTrigger) {
+    golfTrigger.addEventListener('click', playGolfAnimation);
+    golfTrigger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        playGolfAnimation();
+      }
+    });
+  }
 });
