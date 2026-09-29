@@ -1,429 +1,276 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ebrahiem Slamang — Electrical &amp; Computer Engineer</title>
-<meta name="description" content="Eportfolio of Ebrahiem Slamang, final-year Electrical & Computer Engineering student at the University of Cape Town — control systems, RF/electromagnetics and machine learning for medical imaging.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%234C7A5C%22/><path d=%22M10 55 L30 55 L38 30 L50 75 L60 45 L68 55 L90 55%22 stroke=%22%23F8F5EC%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ebrahiem Slamang | Electrical &amp; Computer Engineering</title>
+<meta content="Ebrahiem Slamang, final-year Electrical and Computer Engineering student at UCT. Selected work in embedded systems, radar signal processing and wireless telemetry." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+<link href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%234C7A5C%22/&gt;&lt;path d=%22M10 55 L30 55 L38 30 L50 75 L60 45 L68 55 L90 55%22 stroke=%22%23F8F5EC%22 stroke-width=%228%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/&gt;&lt;/svg&gt;" rel="icon"/>
+<meta content="Ebrahiem Slamang | Electrical &amp; Computer Engineering" property="og:title"/><meta content="Ebrahiem Slamang, final-year Electrical and Computer Engineering student at UCT. Selected work in embedded systems, radar signal processing and wireless telemetry." property="og:description"/><meta content="website" property="og:type"/><meta content="https://eportfolio-ebrahiemslamang.vercel.app/" property="og:url"/></head>
 <body>
-
 <!-- progress bar : live signal readout of scroll position -->
-<div class="scan-progress" id="scanProgress" aria-hidden="true"></div>
-
+<div aria-hidden="true" class="scan-progress" id="scanProgress"></div>
 <a class="skip-link" href="#main">Skip to content</a>
-
 <header class="site-header" id="siteHeader">
-  <div class="header-inner">
-    <a href="#top" class="brand" aria-label="Back to top">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 40 24" width="34" height="20"><polyline points="0,12 8,12 12,4 18,20 24,7 28,12 40,12" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </span>
-      <span class="brand-text">E.SLAMANG</span>
-    </a>
-
-    <nav class="site-nav" id="siteNav" aria-label="Primary">
-      <ol>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#journey" class="nav-link">Journey</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#artefacts" class="nav-link">Artefacts</a></li>
-        <li><a href="#achievements" class="nav-link">Achievements</a></li>
-        <li><a href="#involvement" class="nav-link">Involvement</a></li>
-        <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
-      </ol>
-    </nav>
-
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  </div>
+<div class="header-inner">
+<a aria-label="Back to top" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">
+<svg height="20" viewbox="0 0 40 24" width="34"><polyline fill="none" points="0,12 8,12 12,4 18,20 24,7 28,12 40,12" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6"></polyline></svg>
+</span>
+<span class="brand-text">E.SLAMANG</span>
+</a>
+<nav aria-label="Primary" class="site-nav" id="siteNav">
+<ol><li><a class="nav-link" href="#artefacts">Selected work</a></li><li><a class="nav-link" href="#about">About</a></li><li><a class="nav-link" href="#journey">Experience</a></li><li><a class="nav-link nav-link--cta" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></li></ol>
+</nav>
+<button aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation menu" class="nav-toggle" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
 </header>
-
 <main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="top">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="grid-overlay"></div>
-    </div>
-
-    <div class="section-inner hero-inner">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>// SIGNAL ACQUIRED — EBRAHIEM SLAMANG</p>
-        <h1 class="hero-title">Turning noise into knowledge</h1>
-        <p class="hero-sub">Final-year Electrical &amp; Computer Engineering student at the University of Cape Town, working across <strong>control systems</strong>, <strong>RF &amp; electromagnetics</strong>, and <strong>machine learning for medical imaging</strong>.</p>
-
-        <div class="hero-actions">
-          <a href="#journey" class="btn btn-primary">See my journey<span aria-hidden="true"> →</span></a>
-          <a href="#contact" class="btn btn-ghost">Get in touch</a>
-        </div>
-
-        <div class="hero-stats" role="list">
-          <div class="hero-stat" role="listitem"><span class="hero-stat-num">86.1%</span><span class="hero-stat-label">Matric aggregate</span></div>
-          <div class="hero-stat" role="listitem"><span class="hero-stat-num">’24–’25</span><span class="hero-stat-label">Dean's Merit List</span></div>
-          <div class="hero-stat" role="listitem"><span class="hero-stat-num">4th yr</span><span class="hero-stat-label">BScEng @ UCT</span></div>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="scope-panel">
-          <div class="scope-head">
-            <span class="scope-title">CH.1 — LIVE TRACE</span>
-            <span class="scope-rec"><span class="rec-dot" aria-hidden="true"></span>REC</span>
-          </div>
-          <div class="scope-screen">
-            <svg class="waveform-svg" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
-              <g class="waveform-track">
-                <polyline class="wf-line" points="0,60 20,60 34,20 48,100 62,15 76,95 90,60 110,60 130,60 144,25 158,95 172,20 186,100 200,60 220,60 240,60 254,20 268,100 282,15 296,95 310,60 330,60 350,60 364,25 378,95 392,20 400,60" />
-                <polyline class="wf-line wf-line--copy" points="400,60 420,60 434,20 448,100 462,15 476,95 490,60 510,60 530,60 544,25 558,95 572,20 586,100 600,60 620,60 640,60 654,20 668,100 682,15 696,95 710,60 730,60 750,60 764,25 778,95 792,20 800,60" />
-              </g>
-            </svg>
-          </div>
-          <div class="scope-foot">
-            <span>EMBEDDED SYS</span><span>RF / EM</span><span>CONTROL SYS</span>
-          </div>
-        </div>
-
-        <div class="headshot-panel">
-          <img src="images/headshot.jpg" alt="Portrait of Ebrahiem Slamang" width="342" height="373" loading="eager">
-          <span class="headshot-tag">UCT · ECE</span>
-        </div>
-      </div>
-    </div>
-
-    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
-      <span></span>
-    </a>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
-    <div class="section-inner section-with-rail">
-      <div class="rail" aria-hidden="true">
-        <span class="rail-node"></span>
-        <span class="rail-line"></span>
-      </div>
-      <div class="section-body">
-        <p class="section-eyebrow">01 · About</p>
-        <h2 class="section-title">Systems thinking, matric to megahertz.</h2>
-
-        <div class="about-grid">
-          <figure class="about-photo">
-            <img src="images/UCT.jpg" alt="University of Cape Town campus" loading="lazy">
-            <figcaption>University of Cape Town — where the signal chain starts.</figcaption>
-          </figure>
-
-          <div class="about-text">
-            <p>I'm a final-year Electrical and Computer Engineering student at the University of Cape Town, currently focused on <strong>Embedded systems</strong>, <strong>RF and electromagnetics</strong>, and applying <strong>signal processing to Radar images</strong>. I matriculated second in my class with seven distinctions and an 86.1% aggregate, and I've carried that same discipline through into university — landing on the Dean's Merit List in both 2024 and 2025.</p>
-            <p>Outside the lab, I tutor UCT courses and <span class="golf-trigger" id="golfTrigger" role="button" tabindex="0" aria-label="Play a golf swing animation">tee off with the UCT Golf Club</span>. What draws me to engineering is the quiet usefulness of a well-built system: a controller that keeps a process stable, a signal that carries more information than noise, a model that helps a clinician see something they might otherwise miss.</p>
-
-            <div class="quickstats">
-              <div class="qstat"><span class="qstat-num">7</span><span class="qstat-label">Matric distinctions</span></div>
-              <div class="qstat"><span class="qstat-num">2nd</span><span class="qstat-label">In matric class</span></div>
-              <div class="qstat"><span class="qstat-num">1 yr+</span><span class="qstat-label">tutoring @ UCT</span></div>
-              <div class="qstat"><span class="qstat-num">3</span><span class="qstat-label">Focus areas</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ JOURNEY ============ -->
-  <section class="section section--alt" id="journey">
-    <div class="section-inner section-with-rail">
-      <div class="rail" aria-hidden="true">
-        <span class="rail-node"></span>
-        <span class="rail-line"></span>
-      </div>
-      <div class="section-body">
-        <p class="section-eyebrow">02 · Journey</p>
-        <h2 class="section-title">Education &amp; experience, traced end to end.</h2>
-        <p class="section-lead">The path from matric science labs to university tutorials — every node a step in the same circuit.</p>
-
-        <ol class="timeline">
-          <li class="tl-item">
-            <div class="tl-node" aria-hidden="true"></div>
-            <div class="tl-content">
-              <p class="tl-date">2023 — Present</p>
-              <h3 class="tl-title">BScEng, Electrical &amp; Computer Engineering</h3>
-              <p class="tl-org">University of Cape Town</p>
-              <p class="tl-desc">Fourth year of a four-year degree, specialising in embedded systems, RF &amp; electromagnetics, and control systems.</p>
-            </div>
-          </li>
-          
-          <li class="tl-item">
-            <div class="tl-node" aria-hidden="true"></div>
-            <div class="tl-content">
-              <p class="tl-date">2026 - Present</p>
-              <h3 class="tl-title">Embedded Systems Tutor</h3>
-              <p class="tl-org">University of Cape Town</p>
-              <p class="tl-desc">Ran weekly practical sessions and tutorials advising students on assignments and practicals, invigilated and marked tests.</p>
-            </div>
-          </li>
-
-          <li class="tl-item">
-            <div class="tl-node" aria-hidden="true"></div>
-            <div class="tl-content">
-              <p class="tl-date">2024</p>
-              <h3 class="tl-title">Computer Science Tutor</h3>
-              <p class="tl-org">University of Cape Town</p>
-              <p class="tl-desc">Ran weekly practical sessions advising students on assignments and practicals, invigilated and marked tests, and answered student queries on the course discussion forum.</p>
-            </div>
-          </li>
-
-          <li class="tl-item">
-            <div class="tl-node" aria-hidden="true"></div>
-            <div class="tl-content">
-              <p class="tl-date">2018 — 2022</p>
-              <h3 class="tl-title">National Senior Certificate</h3>
-              <p class="tl-org">Cannons Creek Independent School</p>
-              <p class="tl-desc">Mathematics, English HL, Afrikaans FAL, Physical Sciences, Geography, CAT and IT. Matriculated second in class with 7 distinctions and an 86.1% aggregate.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section class="section" id="skills">
-    <div class="section-inner section-with-rail">
-      <div class="rail" aria-hidden="true">
-        <span class="rail-node"></span>
-        <span class="rail-line"></span>
-      </div>
-      <div class="section-body">
-        <p class="section-eyebrow">03 · Skills</p>
-        <h2 class="section-title">Control panel.</h2>
-        <p class="section-lead">The tools, focus areas and working habits I bring to a project — switched on.</p>
-
-        <div class="panel-group">
-          <h3 class="panel-group-title">Engineering focus</h3>
-          <div class="module-grid">
-            <div class="module"><span class="module-led"></span><span class="module-label">Embedded Systems</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">RF &amp; Electromagnetics</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Control Systems</span></div>
-          </div>
-        </div>
-
-        <div class="panel-group">
-          <h3 class="panel-group-title">Languages &amp; tools</h3>
-          <div class="module-grid">
-            <div class="module"><span class="module-led"></span><span class="module-label">Python</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Java</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">C/C++</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">SQL</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Delphi</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">MS Office</span></div>
-          </div>
-        </div>
-
-        <div class="panel-group">
-          <h3 class="panel-group-title">Ways of working</h3>
-          <div class="module-grid">
-            <div class="module"><span class="module-led"></span><span class="module-label">Fast learner</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Detail-oriented</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Analytical</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Determined &amp; persistent</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Time management</span></div>
-            <div class="module"><span class="module-led"></span><span class="module-label">Communication</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ARTEFACTS ============ -->
-  <section class="section section--alt" id="artefacts">
-    <div class="section-inner section-with-rail">
-      <div class="rail" aria-hidden="true">
-        <span class="rail-node"></span>
-        <span class="rail-line"></span>
-      </div>
-      <div class="section-body">
-        <p class="section-eyebrow">04 · Artefacts</p>
-        <h2 class="section-title">My Work in Action</h2>
-        <p class="section-lead">A few artefacts/projects i've worked on </p>
-      
-
-        <div class="artefact-grid">
-          <article class="artefact-card">
-            <div class="artefact-media">
-              <img src="images/Golf.png" alt="Final Year Project: Low-Cost Radar Golf Swing Analyzer" loading="lazy">
-              <span class="artefact-tag">2026</span>
-            </div>
-            <div class="artefact-body">
-              <h3>Final Year Project: Low-Cost Radar Golf Swing Analyzer</h3>
-              <p>I'm currently working on developing a low-cost radar system to analyze golf swings, focusing on accuracy and affordability.</p>
-            </div>
-          </article>
-          
-          <article class="artefact-card">
-            <div class="artefact-media">
-              <img src="images/Tukzie.png" alt="Tukzie electric tuk tuk" loading="lazy">
-              <span class="artefact-tag">2026</span>
-            </div>
-            <div class="artefact-body">
-              <h3>Tukzie - Vac Work</h3>
-              <p>During my June/July vacation period I worked on an Electric Tuk Tuk at UCT. I worked in a team to design and develop both a digital dashboard display screen for the tuk tuk and a web version to store and view live telemetry.</p>
-            </div>
-          </article>
-
-          <article class="artefact-card">
-            <div class="artefact-media">
-              <img src="images/Project_Icicle.png" alt="Project Icicle communications subsystem" loading="lazy">
-              <span class="artefact-tag">2026</span>
-            </div>
-            <div class="artefact-body">
-              <h3> Project Icicle Communications Subsystem</h3>
-              <p> As part of my fourth year design project, I developed a communications subsystem for an Antarctic buoy, which incorporated bluetooth connectivity for real-time data transmission and LoRa transmission protocols, as well as developing a web dashboard to view telemetry and GPS locations.</p>
-            </div>
-          </article>
-
-          <article class="artefact-card">
-            <div class="artefact-media">
-              <img src="images/Snake_Game.jpg" alt="ESP8266 Snake Game Emulator" loading="lazy">
-              <span class="artefact-tag">2024</span>
-            </div>
-            <div class="artefact-body">
-              <h3> ESP8266 Snake Game Emulator</h3>
-              <p> Developed a functional Snake game emulator using the ESP8266 microcontroller, showcasing embedded systems programming and real-time game development skills</p>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ACHIEVEMENTS ============ -->
-  <section class="section" id="achievements">
-    <div class="section-inner section-with-rail">
-      <div class="rail" aria-hidden="true">
-        <span class="rail-node"></span>
-        <span class="rail-line"></span>
-      </div>
-      <div class="section-body">
-        <p class="section-eyebrow">05 · Achievements</p>
-        <h2 class="section-title">Readout.</h2>
-
-        <div class="readout-grid">
-          <div class="readout"><span class="readout-num">2025</span><span class="readout-label">Dean's Merit List</span></div>
-          <div class="readout"><span class="readout-num">2024</span><span class="readout-label">Dean's Merit List</span></div>
-          <div class="readout"><span class="readout-num">86.1%</span><span class="readout-label">Matric aggregate, 7 distinctions</span></div>
-          <div class="readout"><span class="readout-num">2nd</span><span class="readout-label">Place in matric class</span></div>
-          <div class="readout"><span class="readout-num">Dux</span><span class="readout-label">School Dux Science Award</span></div>
-          <div class="readout"><span class="readout-num">’21 · ’22</span><span class="readout-label">Academic Honours</span></div>
-          <div class="readout"><span class="readout-num">2020</span><span class="readout-label">Academic Colours</span></div>
-          <div class="readout"><span class="readout-num">1st</span><span class="readout-label">CAT &amp; Physical Sciences, 2021</span></div>
-          <div class="readout"><span class="readout-num">1st</span><span class="readout-label">CAT, 2020</span></div>
-          <div class="readout"><span class="readout-num">1st</span><span class="readout-label">L.O., Geography &amp; IT, 2022</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ INVOLVEMENT ============ -->
-  <section class="section section--alt" id="involvement">
-    <div class="section-inner section-with-rail">
-      <div class="rail" aria-hidden="true">
-        <span class="rail-node"></span>
-        <span class="rail-line"></span>
-      </div>
-      <div class="section-body">
-        <p class="section-eyebrow">06 · Involvement</p>
-        <h2 class="section-title">Leadership &amp; service.</h2>
-
-        <div class="involve-grid">
-          <div class="involve-col">
-            <h3 class="involve-heading">Leadership</h3>
-            <ul class="involve-list">
-              <li><span class="involve-role">Prefect</span><span class="involve-meta">2022 · Cannons Creek Independent School</span></li>
-              <li><span class="involve-role">Student Leader</span><span class="involve-meta">2021 · Cannons Creek Independent School</span></li>
-              <li><span class="involve-role">Student Representative</span><span class="involve-meta">2020 · Cannons Creek Independent School</span></li>
-            </ul>
-          </div>
-
-          <div class="involve-col">
-            <h3 class="involve-heading">Service &amp; culture</h3>
-            <ul class="involve-list">
-              <li><span class="involve-role">UCT Golf Club</span><span class="involve-meta">2024 – Present · University of Cape Town</span></li>
-              <li><span class="involve-role">Mountain &amp; Ski Club</span><span class="involve-meta">2024 – 2025 · University of Cape Town</span></li>
-              <li><span class="involve-role">Matric Dance Executive Committee</span><span class="involve-meta">2020 · Cannons Creek Independent School</span></li>
-              <li><span class="involve-role">Senior Marimba Band</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
-              <li><span class="involve-role">Canoeing Club</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
-              <li><span class="involve-role">Interact Club</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
-              <li><span class="involve-role">Junior PR Committee</span><span class="involve-meta">2018 – 2019 · Cannons Creek Independent School</span></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="gallery-strip">
-          <img src="https://picsum.photos/seed/golf-club/400/300" alt="Placeholder image — golf club" loading="lazy">
-          <img src="https://picsum.photos/seed/mountain-ski/400/300" alt="Placeholder image — mountain and ski club" loading="lazy">
-          <img src="https://picsum.photos/seed/marimba-band/400/300" alt="Placeholder image — marimba band" loading="lazy">
-          <img src="https://picsum.photos/seed/canoeing/400/300" alt="Placeholder image — canoeing club" loading="lazy">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="contact" id="contact">
-    <div class="section-inner">
-      <p class="section-eyebrow section-eyebrow--light">07 · Connect</p>
-      <h2 class="contact-title">Let's put a signal on the line.</h2>
-      <p class="contact-sub">Open to internships, collaboration, and conversations about control systems, RF/EM or ML in medical imaging.</p>
-
-      <div class="contact-actions">
-        <a class="btn btn-primary" href="mailto:ebrahiem.2004@gmail.com">Email me</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ebrahiem-slamang-a6b352260/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn btn-ghost" href="Ebrahiem_Slamang_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="section-inner footer-inner">
-    <p>&copy; <span id="year"></span> Ebrahiem Slamang. Built for an engineering eportfolio assignment.</p>
-    <a href="#top" class="back-to-top">Back to top ↑</a>
-  </div>
-</footer>
-
-<!-- Golf swing easter-egg animation -->
-<div class="golf-overlay" id="golfOverlay" aria-hidden="true">
-  <div class="golf-club-wrap">
-    <svg viewBox="0 0 60 170" width="60" height="170">
-      <line x1="30" y1="6" x2="18" y2="148" stroke="#2E362A" stroke-width="4" stroke-linecap="round"/>
-      <path d="M6 148 Q1 158 8 166 Q26 174 36 160 Q31 148 6 148 Z" fill="#F4EEE1" stroke="#2E362A" stroke-width="3"/>
-    </svg>
-  </div>
-  <div class="golf-impact"></div>
-  <div class="golf-ball-wrap">
-    <svg viewBox="0 0 30 30" width="20" height="20">
-      <circle cx="15" cy="15" r="13" fill="#FBF8F0" stroke="#2E362A" stroke-width="2"/>
-      <circle cx="10" cy="10" r="1.3" fill="#D8CBA9"/>
-      <circle cx="19" cy="9" r="1.3" fill="#D8CBA9"/>
-      <circle cx="15" cy="16" r="1.3" fill="#D8CBA9"/>
-      <circle cx="20" cy="19" r="1.3" fill="#D8CBA9"/>
-      <circle cx="9" cy="19" r="1.3" fill="#D8CBA9"/>
-    </svg>
-  </div>
+<div class="section-inner hero-inner">
+<div class="hero-copy">
+<p class="eyebrow">Electrical &amp; Computer Engineering / UCT</p>
+<h1 class="hero-title">Ebrahiem<br/><span>Slamang.</span></h1>
+<p class="hero-sub">I build at the intersection of <strong>hardware, software and signals.</strong> Final-year engineering student at the University of Cape Town, exploring embedded systems, radar and control.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="#artefacts">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="Ebrahiem_Slamang_CV.pdf" rel="noopener" target="_blank">View CV <span aria-hidden="true">↗</span></a></div>
+<div class="hero-stats" role="list"><div><span class="dot"></span> Based in Cape Town, South Africa</div><div>Final year · BScEng · 2026</div></div>
+</div>
+<div class="hero-visual"><div class="portrait-frame"><img alt="Ebrahiem Slamang" height="373" src="images/headshot.jpg" width="342"/><span aria-hidden="true" class="portrait-corner">ES / 26</span></div><div class="portrait-caption"><span>Curious by nature.<br/>Engineer in the making.</span><svg aria-hidden="true" height="36" viewbox="0 0 110 36" width="110"><path d="M0 18H20L29 6L41 30L55 3L68 33L78 18H110" fill="none" stroke="currentColor" stroke-width="1.5"></path></svg></div></div>
 </div>
 
-<script src="js/script.js" defer></script>
+</section><section class="section section--alt" id="artefacts">
+<div class="section-inner section-with-rail">
+
+<div class="section-body">
+<p class="section-eyebrow">01 / Selected work</p>
+<h2 class="section-title">From an idea<br/>to a working system.</h2>
+<p class="section-lead">Embedded interfaces, wireless telemetry and radar signal processing. A selection of the systems I’ve worked on.</p>
+<div class="artefact-grid"><article class="artefact-card">
+<div class="artefact-media">
+<img alt="Tukzie electric tuk tuk" loading="lazy" src="images/Tukzie.png"/>
+
+</div>
+<div class="artefact-body"><p class="project-category">01 / Electric mobility / Team leadership</p><h3>Digital dashboard &amp; live telemetry</h3><p>As group leader during my June/July vacation work at UCT, I worked with a team on a digital dashboard for an electric tuk-tuk and a web interface for live telemetry.</p><p class="project-tools">Embedded UI · Telemetry · Teamwork</p><details><summary>Project notes <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>My contribution</h4><p>Group leadership and hands-on development of the vehicle display and web telemetry interface. The project connected an embedded user interface with the information needed to understand vehicle operation.</p></div></details></div>
+</article>
+<article class="artefact-card">
+<div class="artefact-media">
+<img alt="Final Year Project: Low-Cost Radar Golf Swing Analyzer" loading="lazy" src="images/Golf.png"/>
+
+</div>
+<div class="artefact-body"><p class="project-category">02 / Radar / Final-year project</p><h3>Making sense of a golf swing</h3><p>I’m developing a low-cost radar system to analyse golf swings, with a focus on signal processing, accuracy and affordability.</p><p class="project-tools">MATLAB · CW radar · Signal processing</p><details><summary>Project notes <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>Current work</h4><p>My MATLAB pipeline turns recorded continuous-wave radar signals into speed–time spectrograms. I’m investigating CFAR detection, clustering and reduced markers to describe the swing’s motion. This is ongoing research; performance is still being evaluated.</p></div></details></div>
+</article>
+
+<article class="artefact-card">
+<div class="artefact-media">
+<img alt="Project Icicle communications subsystem" loading="lazy" src="images/Project_Icicle.png"/>
+
+</div>
+<div class="artefact-body"><p class="project-category">03 / Wireless systems / Design project</p><h3>Project Icicle</h3><p>A communications subsystem for an Antarctic buoy, combining Bluetooth and LoRa transmission with a web dashboard for telemetry and GPS locations.</p><p class="project-tools">Bluetooth · LoRa · Telemetry</p><details><summary>Project notes <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>My contribution</h4><p>I developed the communications subsystem as part of my fourth-year design project, working across wireless data transmission and the interface used to view the buoy’s telemetry.</p></div></details></div>
+</article>
+<article class="artefact-card">
+<div class="artefact-media">
+<img alt="ESP8266 Snake Game Emulator" loading="lazy" src="images/Snake_Game.jpg"/>
+
+</div>
+<div class="artefact-body"><p class="project-category">04 / Embedded programming / 2024</p><h3>A classic game, on a microcontroller</h3><p>A functional Snake game emulator built using the ESP8266, bringing game logic and real-time interaction onto an embedded platform.</p><p class="project-tools">ESP8266 · Embedded systems · Game logic</p><details><summary>Project notes <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>Project focus</h4><p>Embedded systems programming and real-time game development on the ESP8266 microcontroller.</p></div></details></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+<div class="section-inner section-with-rail">
+
+<div class="section-body">
+<p class="section-eyebrow">02 / About me</p>
+<h2 class="section-title">A practical mind.<br/>A curious outlook.</h2>
+<div class="about-grid">
+<figure class="about-photo">
+<img alt="University of Cape Town campus" loading="lazy" src="images/UCT.jpg"/>
+<figcaption>University of Cape Town · South Africa</figcaption>
+</figure>
+<div class="about-text"><p class="about-intro">I’m interested in what happens when a signal becomes useful information, and when software starts interacting with the physical world.</p><p>At UCT, I’m completing my final year in Electrical and Computer Engineering. My interests span embedded systems, RF and electromagnetics, and control systems, with current project work focused on radar signal processing.</p><p>Alongside my studies, I tutor university courses and enjoy helping students work through technical problems. Outside engineering, you’ll find me on the golf course with the UCT Golf Club.</p><a class="text-link" href="#journey">Education &amp; experience <span aria-hidden="true">↘</span></a></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ JOURNEY ============ -->
+<section class="section section--alt" id="journey">
+<div class="section-inner section-with-rail">
+
+<div class="section-body">
+<p class="section-eyebrow">03 / Education &amp; experience</p>
+<h2 class="section-title">Learning. Building.<br/>Sharing what I know.</h2>
+<p class="section-lead">Academic foundations, practical experience and time spent helping others learn.</p>
+<ol class="timeline"><li class="tl-item"><div class="tl-content"><p class="tl-date">June / July 2026</p><h3 class="tl-title">Tukzie · Group leader</h3><p class="tl-org">Vacation work · University of Cape Town</p><p class="tl-desc">Led the group working on an electric tuk-tuk dashboard and web interface for live telemetry.</p></div></li>
+<li class="tl-item">
+<div aria-hidden="true" class="tl-node"></div>
+<div class="tl-content">
+<p class="tl-date">2023 — Present</p>
+<h3 class="tl-title">BScEng, Electrical &amp; Computer Engineering</h3>
+<p class="tl-org">University of Cape Town</p>
+<p class="tl-desc">Fourth year of a four-year degree, specialising in embedded systems, RF &amp; electromagnetics, and control systems.</p>
+</div>
+</li>
+<li class="tl-item">
+<div aria-hidden="true" class="tl-node"></div>
+<div class="tl-content">
+<p class="tl-date">2026 - Present</p>
+<h3 class="tl-title">Embedded Systems Tutor</h3>
+<p class="tl-org">University of Cape Town</p>
+<p class="tl-desc">Ran weekly practical sessions and tutorials advising students on assignments and practicals, invigilated and marked tests.</p>
+</div>
+</li>
+<li class="tl-item">
+<div aria-hidden="true" class="tl-node"></div>
+<div class="tl-content">
+<p class="tl-date">2024</p>
+<h3 class="tl-title">Computer Science Tutor</h3>
+<p class="tl-org">University of Cape Town</p>
+<p class="tl-desc">Ran weekly practical sessions advising students on assignments and practicals, invigilated and marked tests, and answered student queries on the course discussion forum.</p>
+</div>
+</li>
+<li class="tl-item">
+<div aria-hidden="true" class="tl-node"></div>
+<div class="tl-content">
+<p class="tl-date">2018 — 2022</p>
+<h3 class="tl-title">National Senior Certificate</h3>
+<p class="tl-org">Cannons Creek Independent School</p>
+<p class="tl-desc">Mathematics, English HL, Afrikaans FAL, Physical Sciences, Geography, CAT and IT. Matriculated second in class with 7 distinctions and an 86.1% aggregate.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</section>
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+<div class="section-inner section-with-rail">
+
+<div class="section-body">
+<p class="section-eyebrow">04 / Toolkit</p>
+<h2 class="section-title">Tools behind the work.</h2>
+<p class="section-lead">Engineering interests, programming languages and the habits I bring to a team.</p>
+<div class="panel-group">
+<h3 class="panel-group-title">Engineering focus</h3>
+<div class="module-grid">
+<div class="module"><span class="module-led"></span><span class="module-label">Embedded Systems</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">RF &amp; Electromagnetics</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Control Systems</span></div>
+</div>
+</div>
+<div class="panel-group">
+<h3 class="panel-group-title">Languages &amp; tools</h3>
+<div class="module-grid">
+<div class="module"><span class="module-led"></span><span class="module-label">Python</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Java</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">C/C++</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">SQL</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Delphi</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">MS Office</span></div>
+</div>
+</div>
+<div class="panel-group">
+<h3 class="panel-group-title">Ways of working</h3>
+<div class="module-grid">
+<div class="module"><span class="module-led"></span><span class="module-label">Fast learner</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Detail-oriented</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Analytical</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Determined &amp; persistent</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Time management</span></div>
+<div class="module"><span class="module-led"></span><span class="module-label">Communication</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ ARTEFACTS ============ -->
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section class="section" id="achievements">
+<div class="section-inner section-with-rail">
+
+<div class="section-body">
+<p class="section-eyebrow">05 / Recognition</p>
+<h2 class="section-title">A consistent foundation.</h2>
+<div class="readout-grid">
+<div class="readout"><span class="readout-num">2025</span><span class="readout-label">Dean's Merit List</span></div>
+<div class="readout"><span class="readout-num">2024</span><span class="readout-label">Dean's Merit List</span></div>
+<div class="readout"><span class="readout-num">86.1%</span><span class="readout-label">Matric aggregate, 7 distinctions</span></div>
+<div class="readout"><span class="readout-num">2nd</span><span class="readout-label">Place in matric class</span></div>
+<div class="readout"><span class="readout-num">Dux</span><span class="readout-label">School Dux Science Award</span></div>
+<div class="readout"><span class="readout-num">’21 · ’22</span><span class="readout-label">Academic Honours</span></div>
+<div class="readout"><span class="readout-num">2020</span><span class="readout-label">Academic Colours</span></div>
+<div class="readout"><span class="readout-num">1st</span><span class="readout-label">CAT &amp; Physical Sciences, 2021</span></div>
+<div class="readout"><span class="readout-num">1st</span><span class="readout-label">CAT, 2020</span></div>
+<div class="readout"><span class="readout-num">1st</span><span class="readout-label">L.O., Geography &amp; IT, 2022</span></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ INVOLVEMENT ============ -->
+<section class="section section--alt" id="involvement">
+<div class="section-inner section-with-rail">
+
+<div class="section-body">
+<p class="section-eyebrow">06 / Beyond engineering</p>
+<h2 class="section-title">Taking part.<br/>Giving something back.</h2>
+<div class="involve-grid">
+<div class="involve-col">
+<h3 class="involve-heading">Leadership</h3>
+<ul class="involve-list">
+<li><span class="involve-role">Prefect</span><span class="involve-meta">2022 · Cannons Creek Independent School</span></li>
+<li><span class="involve-role">Student Leader</span><span class="involve-meta">2021 · Cannons Creek Independent School</span></li>
+<li><span class="involve-role">Student Representative</span><span class="involve-meta">2020 · Cannons Creek Independent School</span></li>
+</ul>
+</div>
+<div class="involve-col">
+<h3 class="involve-heading">Service &amp; culture</h3>
+<ul class="involve-list">
+<li><span class="involve-role">UCT Golf Club</span><span class="involve-meta">2024 – Present · University of Cape Town</span></li>
+<li><span class="involve-role">Mountain &amp; Ski Club</span><span class="involve-meta">2024 – 2025 · University of Cape Town</span></li>
+<li><span class="involve-role">Matric Dance Executive Committee</span><span class="involve-meta">2020 · Cannons Creek Independent School</span></li>
+<li><span class="involve-role">Senior Marimba Band</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
+<li><span class="involve-role">Canoeing Club</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
+<li><span class="involve-role">Interact Club</span><span class="involve-meta">2018 – 2020 · Cannons Creek Independent School</span></li>
+<li><span class="involve-role">Junior PR Committee</span><span class="involve-meta">2018 – 2019 · Cannons Creek Independent School</span></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+<div class="section-inner">
+<p class="section-eyebrow section-eyebrow--light">07 / Get in touch</p>
+<h2 class="contact-title">Let’s build<br/>something useful.</h2>
+<p class="contact-sub">I’m interested in graduate engineering opportunities and conversations about embedded systems, radar and control. I’d be glad to hear from you.</p>
+<div class="contact-actions"><a class="contact-email" href="mailto:ebrahiem.2004@gmail.com">ebrahiem.2004@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links"><a href="https://www.linkedin.com/in/ebrahiem-slamang-a6b352260/" rel="noopener" target="_blank">LinkedIn ↗</a><a href="Ebrahiem_Slamang_CV.pdf" rel="noopener" target="_blank">View CV ↗</a></div></div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="section-inner footer-inner">
+<p>© <span id="year">2026</span> Ebrahiem Slamang</p>
+<a class="back-to-top" href="#top">Back to top ↑</a>
+</div>
+</footer>
+<!-- Golf swing easter-egg animation -->
+
+<script defer="" src="js/script.js"></script>
 </body>
 </html>
