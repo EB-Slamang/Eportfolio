@@ -21,18 +21,6 @@ Then visit http://localhost:8000. No build step or package installation is requi
 - `Ebrahiem_Slamang_CV.pdf`: original supplied portfolio CV
 - `DESIGN.md`: design direction for future edits
 
-## Deploy on your existing Vercel project
-
-Replace the corresponding files in your existing repository, review the diff, and push to the branch connected to Vercel. Retain your existing project settings. This version remains a static HTML/CSS/JS site and needs no framework migration. The redesign itself has not been deployed.
-
-Suggested commit:
-
-```sh
-git add index.html css/styles.css js/script.js README.md DESIGN.md
-git commit -m "Redesign portfolio with project-first layout and sage visual system"
-git push
-```
-
 ## Using the design repositories
 
 These references do not need to run in the website.
@@ -53,4 +41,4 @@ Semantic sections, skip link, focus indicators, keyboard-friendly native project
 
 ## Content notes
 
-Project descriptions are based on the supplied portfolio and user-provided project context. Radar work is ongoing; no accuracy or performance claims have been added. The original illustration for the radar project is retained and should not be mistaken for new experimental results. Replace it with your own measurement figure when ready.
+Project descriptions are based on the supplied portfolio, user-provided project context and the project READMEs. The radar project is complete and links to its GitHub repository; the Project Icicle card links to the buoy dashboard repository. No accuracy or performance claims have been added. The original illustration for the radar project is retained and should not be mistaken for new experimental results. Replace it with your own measurement figure when ready.

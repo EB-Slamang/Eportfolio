@@ -16,7 +16,7 @@ An editorial engineering portfolio for graduate recruiters. Show the person, the
 Large left-aligned name and compact portrait. Selected projects follow the introduction, in a staggered two-column desktop layout and single mobile column. Thin rules separate sections. Keep descriptions specific and readable.
 
 ## Content and interaction
-Tukzie highlights group leadership. Radar research is ongoing, without invented performance claims. Keep original CV unless a replacement is supplied. Use real project assets, no unrelated placeholder photography. Do not add DrainDrive for career positioning.
+Tukzie highlights group leadership. The radar project is complete and links to its repository, without invented performance claims. Project Icicle links to the buoy dashboard repository. Keep original CV unless a replacement is supplied. Use real project assets, no unrelated placeholder photography. Do not add DrainDrive for career positioning.
 
 Use native project disclosures, visible keyboard focus, Escape-to-close mobile navigation and reduced-motion support. All content remains readable without JavaScript.
 
